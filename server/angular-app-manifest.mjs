@@ -2,19 +2,19 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/ifa-quadar-portfolio',
+  baseHref: '/ifaquadarportfolio/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/ifa-quadar-portfolio"
+    "route": "/ifaquadarportfolio"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 1426, hash: '80b6a978bb15f5bf1249bff538a3075520ba2be37ca41af9557144912d2f0089', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1785, hash: '03abdae520bd9f85d437fe26b7d3fc7c71baf16231e389d1c346a2d3246f968c', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 80472, hash: 'c6d39a126108d233f1ba851cf02c2f23b44d47b9375f6ec0c7329925c18827df', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 1425, hash: '1dfdd390274ffe293fd9e9924424ea9fa780d4eac6c4da28e3842b33ef731a3c', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1784, hash: '2af90580405392763d49e33a9599415165826f79c75ceca5c62c91f3336b366d', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 80394, hash: '8b5aab863bfcd7f40fa9ce35bbd7954fb98cac066826ab0b48c6fb04dabc8dbd', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-OXW2MAEB.css': {size: 29, hash: 'fxngjyxXs5g', text: () => import('./assets-chunks/styles-OXW2MAEB_css.mjs').then(m => m.default)}
   },
 };

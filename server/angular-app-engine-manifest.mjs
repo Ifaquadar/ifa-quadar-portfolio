@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/ifa-quadar-portfolio',
+  basePath: '/ifaquadarportfolio',
   allowedHosts: [],
   supportedLocales: {
   "en-US": ""
