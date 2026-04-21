@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ifa-quadar-portfolio": {
+    "ifaquadarportfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -74,10 +74,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ifa-quadar-portfolio:build:production"
+              "buildTarget": "ifaquadarportfolio:build:production"
             },
             "development": {
-              "buildTarget": "ifa-quadar-portfolio:build:development"
+              "buildTarget": "ifaquadarportfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
