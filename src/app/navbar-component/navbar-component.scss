@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap');
+
+$cream: #f7f5f2;
+$white: #fff;
+$terracotta: #c97d4e;
+$ink: #1a1a1a;
+$border: #e4e1da;
+$muted: #8a857e;
+$surface: #edeae5;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pf-root {
+  font-family: 'DM Sans', sans-serif;
+  background: $cream;
+  overflow: hidden;
+}
+
+// ── Navbar ──────────────────────────────────────────
+.pf-nav {
+  background: $white;
+  border-bottom: 0.5px solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 60px;
+  width: 100vw;
+}
+
+.pf-brand {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  color: $ink;
+  letter-spacing: -0.3px;
+  cursor: pointer;
+
+  span {
+    font-style: italic;
+    color: $terracotta;
+  }
+}
+
+.pf-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+
+  li {
+    a {
+      display: block;
+      padding: 6px 13px;
+      font-size: 13.5px;
+      font-weight: 400;
+      color: #5a5650;
+      text-decoration: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+
+      &:hover {
+        background: #f0ede8;
+        color: $ink;
+      }
+    }
+
+    &.pf-active a {
+      color: $ink;
+      font-weight: 500;
+      background: #f0ede8;
+
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        background: $terracotta;
+        border-radius: 2px;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.pf-cta {
+  background: $ink;
+  color: $white;
+  border: none;
+  border-radius: 9px;
+  padding: 8px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #333;
+  }
+}

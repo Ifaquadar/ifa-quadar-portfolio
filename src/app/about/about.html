@@ -1,0 +1,32 @@
+<section class="about-root">
+  <div class="about-inner">
+
+    <div class="about-text">
+      <div class="about-label">About me</div>
+      <h2 class="about-h2">Turning ideas into <em>scalable</em> products</h2>
+      <p class="about-desc">
+        Full Stack Developer with 4+ years of experience delivering enterprise-grade
+        applications at EY. Specialized in Angular and Spring Boot with deep experience
+        across finance, healthcare, and telecom domains.
+      </p>
+      <p class="about-desc">
+        I care about clean architecture, maintainable code, and shipping features that
+        actually move the needle — from polished UIs to robust backend APIs.
+      </p>
+      <!-- <div class="about-chips">
+        <span class="about-chip" *ngFor="let tech of techStack">{{ tech }}</span>
+      </div> -->
+    </div>
+
+    <div class="highlights-grid">
+      <div class="h-card" *ngFor="let item of highlights">
+        <div class="h-card-icon" [ngClass]="item.iconBg">
+          <img [src]="item.iconBg" [alt]="item.label" width="16" height="16" />
+        </div>
+        <div class="h-card-num">{{ item.value }}<span *ngIf="item.suffix">{{ item.suffix }}</span></div>
+        <div class="h-card-label">{{ item.label }}</div>
+      </div>
+    </div>
+
+  </div>
+</section>

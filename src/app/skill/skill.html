@@ -1,0 +1,46 @@
+<section class="sk-root">
+
+  <div class="sk-header">
+    <div class="sk-label">Expertise</div>
+    <h2 class="sk-h2">Skills & <em>technologies</em></h2>
+  </div>
+
+  <div class="sk-grid">
+    <div class="sk-card" *ngFor="let cat of categories">
+
+      <div class="sk-card-top">
+        <div class="sk-icon" [ngClass]="cat.iconClass">{{ cat.emoji }}</div>
+        <div>
+          <div class="sk-card-name">{{ cat.name }}</div>
+          <div class="sk-card-sub">{{ cat.subtitle }}</div>
+        </div>
+      </div>
+
+      <div class="sk-items">
+        <div *ngFor="let item of cat.items">
+          <div class="sk-item-label">
+            <span class="sk-item-name">{{ item.name }}</span>
+            <span class="sk-item-pct">{{ item.percent }}%</span>
+          </div>
+          <div class="sk-bar-track">
+            <div
+              class="sk-bar-fill"
+              [ngClass]="cat.fillClass"
+              [attr.data-w]="item.percent"
+              [style.width.%]="item.percent">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sk-tags-row">
+    <div class="sk-tags-title">Also familiar with</div>
+    <div class="sk-tags-wrap">
+      <span class="sk-tag" *ngFor="let tag of alsoFamiliarWith">{{ tag }}</span>
+    </div>
+  </div>
+
+</section>

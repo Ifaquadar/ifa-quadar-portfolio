@@ -1,0 +1,154 @@
+$cream: #f7f5f2;
+$white: #fff;
+$terracotta: #c97d4e;
+$ink: #1a1a1a;
+$border: #e4e1da;
+$muted: #8a857e;
+$text-mid: #6b6660;
+
+.about-root {
+    background: #ffff;
+    padding: 72px 40px;
+}
+
+.about-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+
+    @media (max-width: 720px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.about-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: $terracotta;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 1.5px;
+        background: $terracotta;
+        border-radius: 2px;
+    }
+}
+
+.about-h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: $ink;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+
+    em {
+        font-style: italic;
+        color: $terracotta;
+    }
+}
+
+.about-desc {
+    font-size: 14.5px;
+    color: $text-mid;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.about-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.about-chip {
+    font-size: 12px;
+    font-weight: 500;
+    color: $text-mid;
+    background: #f0ede8;
+    border: 0.5px solid $border;
+    border-radius: 6px;
+    padding: 5px 12px;
+}
+
+// ── Highlight cards ──────────────────────────────────
+.highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.h-card {
+    background: $cream;
+    border: 0.5px solid $border;
+    border-radius: 14px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: border-color 0.15s;
+
+    &:hover {
+        border-color: #c9bfb3;
+    }
+}
+
+.h-card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+
+    &.icon-orange {
+        background: #fdeee3;
+    }
+
+    &.icon-blue {
+        background: #e6f0fb;
+    }
+
+    &.icon-green {
+        background: #e8f5ee;
+    }
+
+    &.icon-purple {
+        background: #eeebfd;
+    }
+}
+
+.h-card-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: $ink;
+    letter-spacing: -0.8px;
+    line-height: 1;
+
+    span {
+        font-size: 18px;
+        color: $terracotta;
+    }
+}
+
+.h-card-label {
+    font-size: 12.5px;
+    color: $muted;
+    line-height: 1.4;
+}

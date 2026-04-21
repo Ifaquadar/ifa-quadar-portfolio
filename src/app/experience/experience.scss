@@ -1,0 +1,135 @@
+$cream: #f7f5f2;
+$white: #fff;
+$terracotta: #c97d4e;
+$ink: #1a1a1a;
+$border: #e4e1da;
+$muted: #8a857e;
+$text-mid: #6b6660;
+
+.ex-root {
+  background: $white;
+  padding: 72px 40px;
+}
+
+.ex-header {
+  max-width: 900px;
+  margin: 0 auto 48px;
+}
+
+.ex-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $terracotta;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px; height: 1.5px;
+    background: $terracotta;
+    border-radius: 2px;
+  }
+}
+
+@mixin section-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: $ink;
+  letter-spacing: -1px;
+  line-height: 1.1;
+
+  em {
+    font-style: italic;
+    color: $terracotta;
+  }
+}
+
+.ex-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ex-card {
+  background: $cream;
+  border: 0.5px solid $border;
+  border-radius: 16px;
+  padding: 22px 24px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: #c9bfb3;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  }
+}
+
+.ex-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.ex-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &.dot-orange { background: $terracotta; }
+  &.dot-blue   { background: #0a66c2; }
+  &.dot-green  { background: #1d9e75; }
+  &.dot-purple { background: #7f77dd; }
+}
+
+.ex-head {
+  flex: 1;
+}
+
+.ex-role {
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  color: $ink;
+  letter-spacing: -0.2px;
+}
+
+.ex-company {
+  font-size: 13px;
+  color: $muted;
+  margin-top: 2px;
+}
+
+.ex-date {
+  font-size: 12px;
+  color: $text-mid;
+}
+
+.ex-body {
+  padding-left: 24px;
+}
+
+.ex-desc {
+  font-size: 13px;
+  color: #4a4640;
+  margin-bottom: 10px;
+}
+
+.ex-points {
+  padding-left: 16px;
+  margin: 0;
+
+  li {
+    font-size: 13px;
+    color: $text-mid;
+    margin-bottom: 6px;
+  }
+}

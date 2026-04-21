@@ -1,0 +1,37 @@
+<section class="ex-root">
+
+  <div class="ex-header">
+    <div class="ex-label">Journey</div>
+    <h2 class="ex-h2">Work <em>experience</em></h2>
+  </div>
+
+  <div class="ex-timeline">
+
+    <div class="ex-card" *ngFor="let exp of experiences">
+
+      <div class="ex-top">
+        <div class="ex-dot" [ngClass]="exp.dotClass"></div>
+
+        <div class="ex-head">
+          <div class="ex-role">{{ exp.role }}</div>
+          <div class="ex-company">{{ exp.company }}</div>
+        </div>
+
+        <div class="ex-date">{{ exp.duration }}</div>
+      </div>
+
+      <div class="ex-body">
+        <div class="ex-desc">
+          {{ exp.description }}
+        </div>
+
+        <ul class="ex-points">
+          <li *ngFor="let p of exp.points">{{ p }}</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

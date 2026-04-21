@@ -1,0 +1,14 @@
+ <nav class="pf-nav">
+        <div class="pf-brand">Ifa <span>Quadar</span></div>
+
+        <ul class="pf-links">
+            <li [class.pf-active]="activeLink === 'home'" (click)="setActive('home')"><a [routerLink]="[]" fragment="home">Home</a></li>
+            <li [class.pf-active]="activeLink === 'about'" (click)="setActive('about')" ><a [routerLink]="[]" fragment="about">About</a></li>
+            <li [class.pf-active]="activeLink === 'skills'" (click)="setActive('skills')" ><a [routerLink]="[]" fragment="skills">Skills</a></li>
+            <li [class.pf-active]="activeLink === 'projects'" (click)="setActive('projects')" ><a [routerLink]="[]" fragment="projects">Projects</a></li>
+            <li [class.pf-active]="activeLink === 'experience'" (click)="setActive('experience')" ><a [routerLink]="[]" fragment="experience">Experience</a></li>
+            <li [class.pf-active]="activeLink === 'contact'" (click)="setActive('contact')" ><a [routerLink]="[]" fragment="contact">Contact</a></li>
+        </ul>
+
+        <button class="pf-cta">Hire me</button>
+    </nav>

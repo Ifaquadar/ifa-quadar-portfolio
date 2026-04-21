@@ -1,0 +1,197 @@
+$cream: #f7f5f2;
+$white: #fff;
+$terracotta: #c97d4e;
+$ink: #1a1a1a;
+$border: #e4e1da;
+$muted: #8a857e;
+$text-mid: #6b6660;
+
+.proj-root {
+  background: $white;
+  padding: 72px 40px;
+}
+
+.proj-header {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.proj-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $terracotta;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px; height: 1.5px;
+    background: $terracotta;
+    border-radius: 2px;
+  }
+}
+
+.proj-h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: $ink;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  em { font-style: italic; color: $terracotta; }
+}
+
+.proj-filter {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.filter-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: $text-mid;
+  background: $white;
+  border: 0.5px solid $border;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover { border-color: #c9bfb3; color: $ink; }
+  &.active { background: $ink; color: $white; border-color: $ink; }
+}
+
+.proj-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  @media (max-width: 780px) { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 520px) { grid-template-columns: 1fr; }
+}
+
+.proj-card {
+  background: $white;
+  border: 0.5px solid $border;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #c9bfb3;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+  }
+
+  &.featured { grid-column: span 2; }
+}
+
+.proj-card-banner {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+
+  .featured & { height: 140px; }
+}
+
+.banner-finance { background: linear-gradient(135deg, #fdeee3, #f5d8c0); }
+.banner-health  { background: linear-gradient(135deg, #e8f5ee, #c3e8d4); }
+.banner-telecom { background: linear-gradient(135deg, #e6f0fb, #c3d7f5); }
+.banner-dark    { background: linear-gradient(135deg, #eeebfd, #d5cffa); }
+.banner-neutral { background: linear-gradient(135deg, #f0ede8, #dedad3); }
+
+.proj-card-body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.proj-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.proj-domain {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 5px;
+}
+
+.domain-finance  { color: $terracotta; background: #fdeee3; }
+.domain-health   { color: #1d9e75;    background: #e8f5ee; }
+.domain-telecom  { color: #0a66c2;    background: #e6f0fb; }
+
+.proj-links {
+  display: flex;
+  gap: 8px;
+}
+
+.proj-link {
+  width: 28px; height: 28px;
+  border-radius: 7px;
+  border: 0.5px solid $border;
+  background: $cream;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  color: $text-mid;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover { border-color: #888; color: $ink; }
+}
+
+.proj-card-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  color: $ink;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
+.proj-card-desc {
+  font-size: 13px;
+  color: $muted;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.proj-tag {
+  font-size: 11px;
+  font-weight: 500;
+  color: $text-mid;
+  background: $cream;
+  border: 0.5px solid $border;
+  border-radius: 5px;
+  padding: 3px 9px;
+}
