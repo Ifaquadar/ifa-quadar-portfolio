@@ -41,11 +41,13 @@
     <!-- Right: Form -->
     <div class="ct-form-wrap">
 
-      <form  (ngSubmit)="onSubmit(f)" #f="ngForm" name="contact" netlify>
-         <input type="hidden" name="form-name" value="contact" />
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" name="contact" netlify data-netlify="true"
+        netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <div class="ct-field">
           <label>Name</label>
-          <input type="text" placeholder="Your name"  name="name" ngModel required>
+          <input type="text" placeholder="Your name" name="name" ngModel required>
         </div>
 
         <div class="ct-field">
