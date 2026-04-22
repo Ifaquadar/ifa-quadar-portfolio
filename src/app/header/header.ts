@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header {}
+export class Header {
+downloadCV() {
+  const link = document.createElement('a');
+  link.href = 'assets/Ifa_Quadar_Resume.pdf';
+  link.download = 'Ifa_Quadar_Resume.pdf';
+  link.click();
+}
+}

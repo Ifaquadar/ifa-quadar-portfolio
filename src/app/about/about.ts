@@ -14,6 +14,6 @@ export class About {
     { value: '4',  suffix: '+', label: 'Years of experience',           iconBg: '/assets/portfolio.png' },
     { value: '20', suffix: '+', label: 'Projects delivered',             iconBg: '/assets/fast-delivery.png'   },
     { value: '3',  suffix: '',  label: 'Domains — Finance, Health, Telecom', iconBg: '/assets/project.png'  },
-    { value: 'EY', suffix: '',  label: 'Current employer',               iconBg: '/assets/hierarchy.png' },
+    { value: 'EY', suffix: '',  label: 'Previous employer',               iconBg: '/assets/hierarchy.png' },
   ];
 }

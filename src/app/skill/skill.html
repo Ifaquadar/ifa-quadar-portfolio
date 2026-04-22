@@ -23,17 +23,13 @@
             <span class="sk-item-pct">{{ item.percent }}%</span>
           </div>
           <div class="sk-bar-track">
-            <div
-              class="sk-bar-fill"
-              [ngClass]="cat.fillClass"
-              [attr.data-w]="item.percent"
-              [style.width.%]="item.percent">
-            </div>
+            <div class="sk-bar-fill" [ngClass]="cat.fillClass" [style.width.%]="animated ? item.percent : 0"
+              [style.width.%]="item.percent"></div>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 
   <div class="sk-tags-row">
