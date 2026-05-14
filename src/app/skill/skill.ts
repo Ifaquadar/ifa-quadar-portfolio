@@ -30,9 +30,9 @@ export class Skill implements AfterViewInit {
       iconClass: 'ic-blue', fillClass: 'fill-blue',
       items: [
         { name: 'Spring Boot', percent: 90 },
-        { name: 'Java', percent: 88 },
+        { name: 'Java', percent: 92 },
         { name: 'REST APIs', percent: 93 },
-        { name: 'Microservices', percent: 80 },
+        { name: 'Microservices', percent: 85 },
       ]
     },
     {
@@ -52,7 +52,7 @@ export class Skill implements AfterViewInit {
         { name: 'Docker', percent: 80 },
         { name: 'Git / GitHub', percent: 92 },
         { name: 'Jenkins / CI', percent: 75 },
-        { name: 'AWS Basics', percent: 65 },
+        { name: 'AWS ', percent: 65 },
       ]
     },
     {
@@ -61,7 +61,6 @@ export class Skill implements AfterViewInit {
       items: [
         { name: 'Jasmine / Karma', percent: 82 },
         { name: 'JUnit', percent: 80 },
-        { name: 'Cypress (E2E)', percent: 70 },
         { name: 'Mockito', percent: 78 },
       ]
     },
@@ -72,7 +71,7 @@ export class Skill implements AfterViewInit {
         { name: 'Jira / Confluence', percent: 88 },
         { name: 'Postman', percent: 90 },
         { name: 'VS Code / IntelliJ', percent: 93 },
-        { name: 'Figma', percent: 65 },
+        { name: 'Figma', percent: 70 },
       ]
     },
   ];

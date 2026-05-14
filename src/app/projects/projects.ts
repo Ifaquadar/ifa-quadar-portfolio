@@ -20,7 +20,7 @@ export class Projects {
 
   projects: Project[] = [
     {
-      title: 'EY Tax Dashboard',
+      title: 'Catalyst.AI',
       description: 'Enterprise tax reporting platform serving 500+ clients. Built with Angular 16 and Spring Boot, featuring real-time data visualization, role-based access control, and multi-currency support.',
       domain: 'finance',
       domainLabel: 'Finance',

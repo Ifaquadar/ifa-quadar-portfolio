@@ -86,6 +86,7 @@ $surface: #edeae5;
   }
 }
 
+
 .pf-cta {
   background: $ink;
   color: $white;
@@ -101,4 +102,64 @@ $surface: #edeae5;
   &:hover {
     background: #333;
   }
+}
+// ── Hamburger button ────────────────────────────────
+.pf-hamburger {
+  display: none; // hidden on desktop
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: background 0.15s;
+
+  &:hover { background: #f0ede8; }
+
+  span {
+    display: block;
+    height: 1.5px;
+    background: $ink;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;
+
+    &:nth-child(1) { width: 20px; }
+    &:nth-child(2) { width: 14px; }
+    &:nth-child(3) { width: 17px; }
+  }
+
+  &.is-open {
+    span:nth-child(1) { transform: translateY(6.5px) rotate(45deg);  width: 20px; }
+    span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); width: 20px; }
+  }
+}
+
+// ── Mobile breakpoint ────────────────────────────────
+@media (max-width: 768px) {
+  .pf-hamburger { display: flex; }
+
+  .pf-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: $white;
+    border-bottom: 0.5px solid $border;
+    padding: 10px 12px 14px;
+    gap: 4px;
+    z-index: 99;
+
+    &.open { display: flex; }
+
+    li a { padding: 9px 13px; }
+  }
+
+  .pf-nav { position: relative; }
 }

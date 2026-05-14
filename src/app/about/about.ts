@@ -12,8 +12,8 @@ export class About {
 
   highlights = [
     { value: '4',  suffix: '+', label: 'Years of experience',           iconBg: '/assets/portfolio.png' },
-    { value: '20', suffix: '+', label: 'Projects delivered',             iconBg: '/assets/fast-delivery.png'   },
-    { value: '3',  suffix: '',  label: 'Domains — Finance, Health, Telecom', iconBg: '/assets/project.png'  },
+    { value: '7', suffix: '+', label: 'Projects delivered',             iconBg: '/assets/fast-delivery.png'   },
+    { value: '3',  suffix: '',  label: 'Domains — Finance, Health, Telecom, Academic, Legal', iconBg: '/assets/project.png'  },
     { value: 'EY', suffix: '',  label: 'Previous employer',               iconBg: '/assets/hierarchy.png' },
   ];
 }
