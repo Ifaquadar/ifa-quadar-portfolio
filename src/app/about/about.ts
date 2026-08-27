@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './about.scss',
 })
 export class About {
-   techStack = ['Angular', 'Spring Boot', 'Java', 'TypeScript', 'REST APIs', 'PostgreSQL'];
+   techStack = ['Java','Spring Boot', 'React', 'REST APIs', 'PostgreSQL','Microservices', 'AWS', 'Angular'];
 
   highlights = [
     { value: '4',  suffix: '+', label: 'Years of experience',           iconBg: '/assets/portfolio.png' },

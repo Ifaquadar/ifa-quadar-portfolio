@@ -277,6 +277,34 @@ $surface: #edeae5;
 
   &:hover { background: #333; }
 }
+.pf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* icon hidden on desktop by default, text shown */
+.pf-download-icon {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .pf-download-btn {
+        /* collapse to an icon-only circular button, matching your other pf-icon-btn links */
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .pf-download-icon {
+        display: inline-block;
+    }
+
+    .pf-download-text {
+        display: none;
+    }
+}
 
 
 

@@ -87,6 +87,7 @@ $text-mid: #6b6660;
 
 // ── Highlight cards ──────────────────────────────────
 .highlights-grid {
+    margin-top: 5vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;

@@ -10,21 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class Skill implements AfterViewInit {
   alsoFamiliarWith = [
-    'Kafka', 'WebSocket', 'NgRx', 'Hibernate', 'Maven', 'Gradle',
-    'Swagger / OpenAPI', 'Agile / Scrum', 'Linux', 'OAuth 2.0', 'JWT', 'Tailwind CSS'
+    'PostMan', 'OAuth 2.0', 'Hibernate', 'Maven', 'Gradle', 'SonarQube', 'OpenAI API', 'NVIDIA API', 'Claude API', 'Jenkins', 'Kubernetes', 'Terraform',
+    'Swagger ', 'Agile / Scrum', 'Linux', '', 'JWT', 'Tailwind CSS' ,'NgRx', ' RXJS'
   ];
   animated = false;
   categories: SkillCategory[] = [
-    {
-      name: 'Frontend', subtitle: 'UI & frameworks', emoji: '⚡',
-      iconClass: 'ic-orange', fillClass: 'fill-orange',
-      items: [
-        { name: 'Angular', percent: 95 },
-        { name: 'TypeScript', percent: 90 },
-        { name: 'HTML / CSS / SCSS', percent: 92 },
-        { name: 'RxJS', percent: 85 },
-      ]
-    },
     {
       name: 'Backend', subtitle: 'APIs & services', emoji: '🔧',
       iconClass: 'ic-blue', fillClass: 'fill-blue',
@@ -33,6 +23,16 @@ export class Skill implements AfterViewInit {
         { name: 'Java', percent: 92 },
         { name: 'REST APIs', percent: 93 },
         { name: 'Microservices', percent: 85 },
+      ]
+    },
+    {
+      name: 'Frontend', subtitle: 'UI & frameworks', emoji: '⚡',
+      iconClass: 'ic-orange', fillClass: 'fill-orange',
+      items: [
+        { name: 'Angular', percent: 95 },
+        { name: 'React', percent: 90 },
+        { name: 'TypeScript', percent: 92 },
+        { name: 'HTML / CSS / SCSS', percent: 85 },
       ]
     },
     {
@@ -49,19 +49,19 @@ export class Skill implements AfterViewInit {
       name: 'DevOps', subtitle: 'CI/CD & cloud', emoji: '🚀',
       iconClass: 'ic-purple', fillClass: 'fill-purple',
       items: [
-        { name: 'Docker', percent: 80 },
-        { name: 'Git / GitHub', percent: 92 },
-        { name: 'Jenkins / CI', percent: 75 },
-        { name: 'AWS ', percent: 65 },
+         { name: 'AWS ', percent: 80 },
+         { name: 'Git / GitHub', percent: 92 },
+        { name: 'Docker', percent: 60 },
+        { name: 'Azure ', percent: 50 }
       ]
     },
     {
       name: 'Testing', subtitle: 'Quality assurance', emoji: '🧪',
       iconClass: 'ic-red', fillClass: 'fill-red',
       items: [
-        { name: 'Jasmine / Karma', percent: 82 },
         { name: 'JUnit', percent: 80 },
-        { name: 'Mockito', percent: 78 },
+        { name: 'Mockito', percent: 80 },
+         { name: 'Jasmine / Karma', percent: 60 },
       ]
     },
     {
